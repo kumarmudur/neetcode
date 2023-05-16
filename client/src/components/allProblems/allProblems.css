@@ -23,15 +23,15 @@ td {
     padding: 1rem;
 }
 
-.Easy {
+.easy {
     color: green;
     font-weight: 900;
 }
-.Medium {
+.medium {
     color: rgb(255, 166, 0);
     font-weight: 900;
 }
-.Hard {
+.hard {
     color: red;
     font-weight: 900;
 }
