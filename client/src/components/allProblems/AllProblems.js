@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 
-import "./allProblems.css"
 import { backendUrl } from "../../constants.js";
+import "./allProblems.css"
 
 const AllProblemsPage = () => {
   const [problems, setProblems] = useState([]);
@@ -24,13 +24,11 @@ const AllProblemsPage = () => {
     <div id="allproblems">
       <table>
         <tbody>
-
           <tr>
             <th>Title</th>
             <th>Difficulty</th>
             <th>Acceptance</th>
           </tr>
-
           {problems.map((prob,index) => (
             <tr>
               <Link to={`/problems/:${prob.problemId}`}>

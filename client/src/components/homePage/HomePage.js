@@ -1,6 +1,6 @@
 import React from 'react'
-import "./homePage.css"
 import loremContent from './LoremPosts'
+import "./homePage.css"
 
 const HomePage = () => {
   return (
