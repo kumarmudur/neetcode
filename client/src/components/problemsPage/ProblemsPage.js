@@ -30,7 +30,7 @@ const ProblemsPage = () => {
   const handleKey = (event) => {
     if (event.key == "Tab"){
       event.preventDefault() ;
-      const { selectionStart , selectionEnd , value } = event.target ;
+      const { selectionStart, value } = event.target ;
       const val = value.substring(0,selectionStart) + "\t" + value.substring(selectionStart) ;
       event.target.value = val;
       event.target.selectionStart = event.target.selectionEnd = selectionStart+1;

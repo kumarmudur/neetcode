@@ -19,7 +19,6 @@ const Login = () => {
           password: password
         })
     });
-
     const json = await response.json();
     localStorage.setItem("token", json.token);
   }
