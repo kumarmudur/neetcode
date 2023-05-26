@@ -24,7 +24,6 @@ const ProblemsPage = () => {
   useEffect(() => {
     init();
   }, [])
-  // console.log(cleanId) ;
 
 
   const handleKey = (event) => {
