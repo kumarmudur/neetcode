@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom'
 import "./problemsPage.css"
 import {backendUrl} from "../../constants.js";
 
-
 const ProblemsPage = () => {
   const [CodeSeg, setCodeSeg] = useState("") ;
   const { pid } = useParams() ;
@@ -27,7 +26,7 @@ const ProblemsPage = () => {
 
 
   const handleKey = (event) => {
-    if (event.key == "Tab"){
+    if (event.key === "Tab"){
       event.preventDefault() ;
       const { selectionStart, value } = event.target ;
       const val = value.substring(0,selectionStart) + "\t" + value.substring(selectionStart) ;
